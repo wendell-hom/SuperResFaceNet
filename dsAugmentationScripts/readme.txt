@@ -13,10 +13,10 @@ python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/downsample_2
 python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/downsample_4_2/ -p 4 -q 2 -f 0
 
 5. Blur 2x2
-python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/barrel/ -f 1 -r 2
+python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/blur_2/ -f 1 -r 2
 
 6. blur 3x3
-python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/barrel/ -f 1 -r 3
+python3 applyFilter.py -d ../dataset/img_align_celeba -o ../dataset/blur_3/ -f 1 -r 3
 
 
 Barrel / fish eye lens distortion read:

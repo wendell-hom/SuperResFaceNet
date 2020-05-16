@@ -3,3 +3,11 @@ the facenet model for facial recognition.
 
 The Celeb1-A.ipynb notebook is our notebook which uses a pretrained facenet model on a 
 a 1000-person subset of the Celeb1-A dataset. 
+
+  Model       |  Original  |  Downsample_2x2 |  Downsample_4x4  |  Blur_2x2  | Blur_3x3
+--------------|------------|-----------------|------------------|------------|-----------
+Orignal       |   92.9%    |   88.8%         |     31.2%        |     79.3%  |  26.5%
+Downsample_2x2|   93.0%    |   90.9%         |     38.3%        |     82.5%  |  33.5%
+Downsample_4x4|   82.2%    |    79.2%        |     57.5%        |     70.8%  |  32.5%
+Blur_2x2      |            |                 |                  |            |
+Blur_3x3      |            |                 |                  |            |
