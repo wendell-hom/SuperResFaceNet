@@ -1,0 +1,30 @@
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/original
+6722/6722 [==============================] - 0s 18us/sample - loss: 0.5906 - acc: 0.9040
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/ds_2x_png
+6717/6717 [==============================] - 0s 18us/sample - loss: 0.6183 - acc: 0.8974
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/ds_3x_png
+6717/6717 [==============================] - 0s 18us/sample - loss: 0.7726 - acc: 0.8607
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/ds_4x_png
+6708/6708 [==============================] - 0s 18us/sample - loss: 1.3215 - acc: 0.7403
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/ds_6x_png
+6514/6514 [==============================] - 0s 17us/sample - loss: 4.6671 - acc: 0.1621
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/dsSR_2x_png
+6719/6719 [==============================] - 0s 17us/sample - loss: 0.6052 - acc: 0.9000
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/dsSR_3x_png
+6717/6717 [==============================] - 0s 17us/sample - loss: 0.7135 - acc: 0.8755
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/dsSR_4x_png
+6714/6714 [==============================] - 0s 19us/sample - loss: 1.0636 - acc: 0.7961
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/dsSR_6x_png
+6705/6705 [==============================] - 0s 19us/sample - loss: 2.7692 - acc: 0.4333
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/blur_2_png
+6712/6712 [==============================] - 0s 19us/sample - loss: 0.8104 - acc: 0.8525
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/blur_3_png
+6687/6687 [==============================] - 0s 17us/sample - loss: 2.6520 - acc: 0.4787
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/blurSR_2_png
+6709/6709 [==============================] - 0s 20us/sample - loss: 0.9063 - acc: 0.8325
+/home/anishag/Desktop/cs231N/SuperResFaceNet/facenet/embeddings/blurSR_3_png
+6688/6688 [==============================] - 0s 18us/sample - loss: 2.4899 - acc: 0.4990
+/home/anishag/Desktop/cs231N/dataset/png/dwns_4
+6718/6718 [==============================] - 0s 18us/sample - loss: 1.0607 - acc: 0.7990
+/home/anishag/Desktop/cs231N/dataset/png/SR_DS_4
+6714/6714 [==============================] - 0s 17us/sample - loss: 1.0636 - acc: 0.7961
