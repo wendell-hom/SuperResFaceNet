@@ -53,12 +53,17 @@ def main(argv):
 
     idx = 0
     for subdir in subdirs:
-        img_list = sorted(glob.glob(folder_GT + subdir + '/*'))
+        img_path = os.path.join(folder_GT, subdir + '/*')
+        img_list = sorted(glob.glob(img_path))
+        # print("img_list", img_list)
         for _, img_path in enumerate(img_list):
             idx += 1
             base_name = os.path.splitext(os.path.basename(img_path))[0]
             im_GT = cv2.imread(img_path) / 255.
             im_Gen = cv2.imread(os.path.join(folder_Gen, subdir, base_name + suffix + '.png')) / 255.
+
+            im_GT = resizing(im_GT)
+            im_Gen = resizing(im_Gen)
 
             if test_Y and im_GT.shape[2] == 3:  # evaluate on Y channel in YCbCr color space
                 im_GT_in = bgr2ycbcr(im_GT)
@@ -90,6 +95,15 @@ def main(argv):
         sum(SSIM_all) / len(SSIM_all)))
     return
 
+def resizing(img):
+    width = 178
+    height = 218
+    h, w, c = img.shape
+    if width != w and height != h:
+        out = cv2.resize(img, (width, height), interpolation = cv2.INTER_LANCZOS4)
+    else:
+        out = img
+    return out
 
 def calculate_psnr(img1, img2):
     # img1 and img2 have range [0, 255]

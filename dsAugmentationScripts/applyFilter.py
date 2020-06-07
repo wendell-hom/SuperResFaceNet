@@ -25,8 +25,8 @@ def downSampleImage(filename, dsFactorW = 1, dsFactorH = 1):
     H, W, _ = np.shape(im)
     WW = int(W/dsFactorW)
     HH = int(H/dsFactorH)
-    imOut = im.resize((WW, HH), resample=Image.NEAREST)
-    imOut = imOut.resize((W, H), resample=Image.NEAREST)
+    imOut = im.resize((WW, HH), resample=Image.BICUBIC)
+    imOut = imOut.resize((int(W), int(H)), resample=Image.BICUBIC)
     #imOut.show()
     return imOut
 
@@ -74,7 +74,9 @@ def barrelDistortImage(filename):
 
 def blurImage(filename, radius = 1):
     im = Image.open(filename)
-    out = im.filter(ImageFilter.GaussianBlur(radius=radius))
+    H, W, _ = np.shape(im)
+    imOut = im.filter(ImageFilter.GaussianBlur(radius=radius))
+    out = imOut.resize((int(W/4), int(H/4)), resample=Image.LANCZOS)
     #out.show()
     return out
 
@@ -122,7 +124,7 @@ def main(argv):
 
     for files in filenames:
         ext = os.path.splitext(files)[-1].lower()
-        if ext in ('.jpg'):
+        if ext in ('.png'):
             inputFileName = os.path.join(imageDir, files)
             outputFileName = os.path.join(outputDir, files)
             print('image name ', inputFileName, " in processing...")
