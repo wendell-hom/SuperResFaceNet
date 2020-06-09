@@ -3,7 +3,8 @@
 ----------------------------
 
 The materials found here is a condensed version of our github repo: https://github.com/wendell-hom/SuperResFaceNet
-and has been cleaned up and simplified so that the reader can get a general gist of the salient parts of the project.
+and has been cleaned up, renamed, and simplified so that the reader can get a general gist of the salient parts of the project.
+Please note that the code here is incomplete; folder structures have been changed for purposes of simplicity to the reader.
 
 Folder structure is as follows:
 
